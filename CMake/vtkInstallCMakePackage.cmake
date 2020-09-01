@@ -97,7 +97,6 @@ set(vtk_cmake_module_files
   FindOSMesa.cmake
   FindPEGTL.cmake
   FindSDL2.cmake
-  FindTBB.cmake
   FindTHEORA.cmake
   Findutf8cpp.cmake
   FindCGNS.cmake
