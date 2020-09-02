@@ -915,15 +915,15 @@ bool vtkPythonUtil::ImportModule(const char* fullname, PyObject* globals)
 
   PyObject* m = nullptr;
 
-  if (fullname == name || (fullname[0] == '.' && &fullname[1] == name))
-  {
-    // try relative import (const-cast is needed for Python 2.x only)
-    m = PyImport_ImportModuleLevel(const_cast<char*>(name), globals, nullptr, nullptr, 1);
-    if (!m)
-    {
-      PyErr_Clear();
-    }
-  }
+//  if (fullname == name || (fullname[0] == '.' && &fullname[1] == name))
+//  {
+//    // try relative import (const-cast is needed for Python 2.x only)
+//    m = c(const_cast<char*>(name), globals, nullptr, nullptr, 1);
+//    if (!m)
+//    {
+//      PyErr_Clear();
+//    }
+//  }
 
   if (!m)
   {
