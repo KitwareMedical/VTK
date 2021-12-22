@@ -1,4 +1,4 @@
 [submodule "VTK-m"]
 	path = ThirdParty/vtkm/vtkvtkm/vtk-m
-	url = https://gitlab.kitware.com/shreeraj.jadhav/vtk-m.git
-	branch = fix-find-tbb-slicer
+	url = https://github.com/KitwareMedical/vtk-m.git
+	branch = slicersmtk-1.6.0-2021-10-04-0f4244669
