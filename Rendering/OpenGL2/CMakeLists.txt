@@ -337,6 +337,10 @@ endif()
 if (NOT ANDROID AND NOT APPLE_IOS AND NOT CMAKE_SYSTEM_NAME STREQUAL
     "Emscripten" AND NOT VTK_OPENGL_USE_GLES)
   VTK_ADD_EXECUTABLE(vtkProbeOpenGLVersion vtkProbeOpenGLVersion.cxx)
+  target_link_libraries(vtkProbeOpenGLVersion
+    ${CMAKE_DL_LIBS}
+    ${CMAKE_THREAD_LIBS_INIT}
+    )
   target_link_libraries(vtkProbeOpenGLVersion ${vtk-module})
 endif()
 
